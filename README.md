@@ -70,7 +70,7 @@ Magisk/KernelSU模块：./Modules 目录下
 
 #### 基础支持层
 
-- lib_base_shell：作为提供 Shell 能力的基础模块，该模块提供执行 Shell 能力，集成了 root、Shizuku 等能力。
+- lib_base_shell：作为提供 Shell 能力的基础模块，该模块提供执行 Shell 能力，集成了 root、Shizuku 等能力。技术可参考博主这篇帖子:[Android执行Shell命令](https://blog.csdn.net/Hunter_chemistry/article/details/146188990?spm=1001.2014.3001.5501)
 - lib_oem_sdk：提供了一些系统源码的对外 API 暴露，主要是为了写 LSPosed 模块的时候用，不过目前并没有被依赖进主工程。
 
 ### 开发环境
