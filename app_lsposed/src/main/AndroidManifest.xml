@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".app.XpSettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_xp_settings"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".app.XpTestActivity" />
+
+        <provider
+            android:name=".utils.prefs.SharedPrefsProvider"
+            android:authorities="${applicationId}.provider.sharedprefs"
+            android:defaultToDeviceProtectedStorage="true"
+            android:directBootAware="true"
+            android:exported="true"
+            android:grantUriPermissions="true" />
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposed_scope" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="HesleyTools" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="93" />
+        <meta-data
+            android:name="xposedsharedprefs"
+            android:value="true" />
+    </application>
+
+</manifest>

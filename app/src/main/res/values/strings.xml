@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HesleyTools</string>
+    <string name="app_slogan">Hesley自用工具箱</string>
+    <string name="about">关于</string>
+    <string name="open_source_license">开源许可</string>
+</resources>

@@ -1,0 +1,7 @@
+id=hyperos_hesley_plugin
+name=Hesley自用澎湃修改模块
+version=V1.2 (202409014)
+versionCode=202409014
+minMagisk=1600
+author=Hesley
+description=小白条跟随应用、锁屏禁止显示小白条（仅支持搭载安卓14为底层的HyperOS设备使用，其他设备请勿尝试）

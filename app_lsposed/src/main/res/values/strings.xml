@@ -1,0 +1,20 @@
+<resources>
+    <string name="title_activity_xp_settings">模块设置</string>
+    <string name="hide_clean_button">隐藏清理后台按钮</string>
+    <string name="hide_clean_button_summary">只是将清理按钮变为透明，但实际上依然可以点击</string>
+    <string name="pref_title_miui_home">系统桌面设置</string>
+    <string name="control_center_show_step">控制中心显示步数</string>
+    <string name="pref_title_systemui">系统界面设置</string>
+    <string name="status_bar_show_info">状态栏展示信息总开关</string>
+    <string name="status_bar_show_cpu">CPU信息展示</string>
+    <string name="pref_title_systemui_status_bar_info">状态栏信息展示</string>
+    <string name="status_bar_show_cpu_threshold">CPU占用显示阈值</string>
+    <string name="status_bar_show_cpu_threshold_summary">当CPU占用超过这个比例的时候才会显示图标，范围0–100，当前值为%d%%</string>
+    <string name="status_bar_show_battery">显示电池信息</string>
+    <string name="status_bar_show_battery_summary">显示功耗（W）和电流（A或mA）</string>
+    <string name="status_bar_show_cpu_animation_duration">CPU占用图标更新动画时长</string>
+    <string name="status_bar_show_cpu_animation_duration_summary">进度条每次刷新进度的时候会渐变更新。范围0–1000（毫秒），0表示不设置动画，当前值为%d ms</string>
+    <string name="pref_title_other_settings">其他设置</string>
+    <string name="pref_title_moonlight_exit">Moonlight快捷退出</string>
+    <string name="pref_summary_moonlight_exit">Moonlight串流界面按住鼠标中键可以直接关闭串流</string>
+</resources>

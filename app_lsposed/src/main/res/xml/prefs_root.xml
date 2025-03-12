@@ -1,0 +1,65 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/pref_title_miui_home">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:icon="@drawable/baseline_hide_source_24"
+            app:key="prefs_key_home_hide_clean_button"
+            app:summary="@string/hide_clean_button_summary"
+            app:title="@string/hide_clean_button" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_title_systemui">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:icon="@drawable/baseline_directions_walk_24"
+            app:key="prefs_key_notification_center_show_step"
+            app:title="@string/control_center_show_step" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_title_systemui_status_bar_info">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:icon="@drawable/baseline_info_outline_24"
+            app:key="prefs_key_status_bar_show_info"
+            app:title="@string/status_bar_show_info" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="prefs_key_status_bar_show_info"
+            app:key="prefs_key_status_bar_show_cpu"
+            app:title="@string/status_bar_show_cpu" />
+
+        <SeekBarPreference
+            android:defaultValue="0"
+            android:max="100"
+            android:summary="@string/status_bar_show_cpu_threshold_summary"
+            app:dependency="prefs_key_status_bar_show_cpu"
+            app:key="prefs_key_status_bar_show_cpu_threshold"
+            app:title="@string/status_bar_show_cpu_threshold" />
+
+
+        <SeekBarPreference
+            android:defaultValue="500"
+            android:max="1000"
+            android:summary="@string/status_bar_show_cpu_animation_duration_summary"
+            app:dependency="prefs_key_status_bar_show_cpu"
+            app:key="prefs_key_status_bar_show_cpu_animation_duration"
+            app:title="@string/status_bar_show_cpu_animation_duration" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="prefs_key_status_bar_show_info"
+            app:key="prefs_key_status_bar_show_battery"
+            app:summary="@string/status_bar_show_battery_summary"
+            app:title="@string/status_bar_show_battery" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
